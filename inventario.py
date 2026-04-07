@@ -16,6 +16,7 @@ class Inventario:
             if producto['nombre'].lower() == nombre.lower():
                 if venta > producto['cantidad']:
                     print("⚠️  verifique la cantidad a comprar")
+                    break
                 else:
                     producto['cantidad'] -= venta
                     print("Su compra fue exitosa!")
